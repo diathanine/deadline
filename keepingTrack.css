@@ -1,0 +1,90 @@
+#cube{
+	border-style: solid;
+	border-color: red;
+	width: 30%;
+	height: 30%;
+	/*color: red;*/
+
+}
+
+#container{
+	background-color: blue;
+	margin: 0 auto;
+	margin-top: 15%;
+	width: 7em;
+	height: 3em;
+	/*display: none;*/
+
+}
+/*.counter{
+	text-align: center;
+}
+*/.upArrow{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent; 
+	border-left: 100px solid red; 
+	border-bottom: 50px solid transparent;
+	float: left;
+}
+.downArrow{
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+	float: left;
+}
+.counter{
+	float: left;
+	padding: 1em;
+}
+/*h2 span{
+	position: absolute;
+	margin-left: 10%;
+	background-color: blue;
+}*/
+/*.spacer{
+	width: 6em;
+}*/
+h2{
+	display: none;
+	vertical-align: center;
+	position: absolute;
+	font-family: sans-serif;
+	color: red;
+	background-color: white;
+	font-size: 3em;
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 25%;
+	text-align: center;
+
+}
+h1{
+	position: absolute;
+	font-family: sans-serif;
+	color: red;
+	background-color: white;
+	border-color: red;
+	border-style: solid;
+	font-size: 3em;
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 25%;
+	text-align: center;
+}
+#go{
+	display: none;
+	font-family: sans-serif;
+	color: red;
+	background-color: white;
+	border-color: red;
+	border-style: solid;
+	font-size: 3em;
+	width: 40%;
+	/*position: bottom;*/
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 60%;
+	text-align: center;}

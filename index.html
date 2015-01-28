@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<script src="jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="keepingTrack.css">
+<script type="text/javascript">
+	
+
+	$(document).ready(function(){
+  $("h1").click(function(){
+    $('h1').hide();
+    $('h2').show();
+    $('#go').show();
+// alert('this works');
+  });
+});
+	var PLAYERS= 2;
+	$(document).ready(function(){
+  $(".downArrow").click(function(){
+    PLAYERS --;
+    if (PLAYERS < 1) {
+    	PLAYERS = 1;
+    };
+    // alert('downArrow works');
+    $('.counter').html (PLAYERS);
+	});
+  $(".upArrow").click(function(){
+    PLAYERS ++;
+    // alert('upArrow works');
+    $('.counter').html(PLAYERS);
+	});
+});
+
+	$(document).ready(function(){
+  $("#go").click(function(){
+    $('h2').hide();
+    // $('h2').show();
+    $('#go').hide();
+// alert('this works');
+	create_cube(PLAYERS);
+  });
+});
+
+var div = $("<div></div>");
+	function create_cube (PLAYERS) {
+		$().append(div)
+	};
+	
+	</script>
+</head>
+<body>
+	<div class="home">
+		<h1>START</h1>
+		<h2>
+		PLAYERS:
+		<div id="container">
+		<p class="downArrow"></p>
+		<!-- <div class='spacer'></div> -->
+		<p class="counter">2</p>
+		<!-- <div class = 'spacer'></div> -->
+		<p class="upArrow"></p>
+		</div>
+		</h2>
+		<div id="go">GO</div>
+	</div>
+	<div>
+		
+	</div>
+</body>
+</html>
