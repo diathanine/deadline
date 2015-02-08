@@ -37,15 +37,26 @@
     $('h2').hide();
     // $('h2').show();
     $('#go').hide();
-// alert('this works');
-	create_cube(PLAYERS);
-  });
-});
+// function appendText() {
+	while (PLAYERS > 0){
+    var txt2 = $("<div></div>").text("Text.");  // Create text with jQuery
+    var txt3 = document.createElement("div");
+    txt3.innerHTML = "Text.";               // Create text with DOM
+	 $("#fightfield").append(txt2, txt3);
+    PLAYERS--; 
+    };    // Append new elements
 
-var div = $("<div></div>");
-	function create_cube (PLAYERS) {
-		$().append(div)
-	};
+// alert('this works');
+// 	function create_cube (PLAYERS);
+  });
+ });
+
+f
+
+// var div = $("<div></div>");
+// 	function create_cube (PLAYERS) {
+// 		$().append(div)
+// 	};
 	
 	</script>
 </head>
@@ -64,7 +75,7 @@ var div = $("<div></div>");
 		</h2>
 		<div id="go">GO</div>
 	</div>
-	<div>
+	<div id ='fightfield'>
 		
 	</div>
 </body>
